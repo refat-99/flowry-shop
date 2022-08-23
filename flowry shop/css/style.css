@@ -1,0 +1,128 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-Name {
+  color: rgb(12, 47, 111);
+  text-align: center;
+  background-color: rgb(251, 233, 233);
+}
+
+.search-field {
+  background-color: rgb(251, 233, 233);
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+.search-field:hover {
+  outline: none;
+  border: none;
+}
+
+.search-box {
+  border: 2px solid rgb(3, 118, 211);
+  width: 300px;
+  /* border-radius: 4px; */
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.search-button {
+  padding: 5px 10px;
+  background-color: rgb(49, 18, 79);
+  margin-left: 40px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+}
+
+#all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-product {
+  padding: 10px;
+  transition: 0.6s;
+  color: darkblue;
+  background-color: rgb(253, 240, 243);
+  height: 420px;
+}
+
+.single-product:hover {
+  box-shadow: 4px 4px 7px gray;
+  border-radius: 10px;
+  border: 1px solid cyan;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+
+.cart {
+  width: 350px;
+  /* border: 1px solid green; */
+  padding: 10px;
+  box-shadow: 10px 10px 20px gray;
+  border-radius: 5px;
+  margin-right: 30px;
+  position: fixed;
+}
+
+.cart-main {
+  padding-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cart {
+    width: 300px;
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+  }
+
+  .cart-main {
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
